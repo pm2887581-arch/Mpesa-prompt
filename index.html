@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Purchase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="Price">KSH 200</div>
+        <h1>Concert Night 2026</h1>
+        <p>Date: February 15, 2026</p>
+        <p>Venue: Vspot, Thika </p>
+        <p>Join us for an unforgettable night of music and entertainment!</p>
+    </div>
+    <div class="ticket-form">
+        <h1>Event Tickets Purchase</h1>
+        <p class="description">Secure payment for your event ticket. Pay with<br>Card or M-Pesa</p>
+        <div class="price">KES 200</div>
+
+        <button id="payButton" class="pay-button">Pay with M-Pesa</button>
+        </button>
+
+        <div class="divider">or pay with</div>
+
+        <div class="alternative-payments"></div>
+        <button id="paypalButton" class="alt-pay-button paypal">
+            <i class="fab fa-paypal"></i> PayPal
+        </button>
+        <button id="stripeButton" class="alt-pay-button stripe">
+            <i class="fab fa-cc-stripe"></i> Stripe
+        </button>
+    </div>
+    </div>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
