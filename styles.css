@@ -12,15 +12,14 @@
     --white: #ffffff;
     --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --border-radius: 12px;
-}
-
-* {
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  body {
     font-family: 'Poppins', sans-serif;
     background: var(--background);
     display: flex;
@@ -30,9 +29,8 @@ body {
     min-height: 100vh;
     padding: 20px;
     color: var(--text-color);
-}
-
-.container {
+  }
+  .container {
     background: var(--white);
     padding: 2.5rem;
     border-radius: var(--border-radius);
@@ -40,29 +38,26 @@ body {
     text-align: center;
     max-width: 400px;
     width: 100%;
-}
-
-h1 {
+  }
+  
+  h1 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
-}
-
-.description {
+  }
+  .description {
     color: var(--text-light);
     font-size: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
-}
-
-.price {
+  }
+  .price {
     font-size: 2rem;
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 2rem;
-}
-
-.pay-button {
+  }
+  .pay-button {
     padding: 0.8rem;
     font-size: 1rem;
     font-weight: 500;
@@ -78,45 +73,41 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
-
-.pay-button:hover {
+  }
+  .pay-button:hover {
     background-color: var(--primary-hover);
     transform: translateY(-2px);
-}
-
-.divider {
+  }
+  .divider {
     color: var(--text-light);
     font-size: 0.9rem;
     margin: 1.5rem 0;
     position: relative;
-}
-
-.divider::before,
-.divider::after {
+  }
+  .divider::before,
+  .divider::after {
     content: "";
     position: absolute;
     top: 50%;
     width: 30%;
     height: 1px;
     background: var(--divider-color);
-}
-
-.divider::before {
+  }
+  
+  .divider::before {
     left: 0;
-}
-
-.divider::after {
+  }
+  
+  .divider::after {
     right: 0;
-}
-
-.alternative-payments {
+  }
+  .alternative-payments {
     display: flex;
     gap: 10px;
     margin-top: 1rem;
-}
-
-.alt-pay-button {
+  }
+  
+  .alt-pay-button {
     padding: 0.7rem;
     font-size: 0.9rem;
     font-weight: 500;
@@ -130,42 +121,43 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 8px;
-}
-
-.alt-pay-button:hover {
+  }
+  
+  .alt-pay-button:hover {
     transform: translateY(-2px);
-}
-
-.paypal {
+  }
+  
+  .paypal {
     background-color: var(--paypal-color);
-}
-
-.paypal:hover {
+  }
+  
+  .paypal:hover {
     background-color: var(--paypal-hover);
-}
-
-.stripe {
+  }
+  
+  .stripe {
     background-color: var(--stripe-color);
-}
-
-.stripe:hover {
+  }
+  
+  .stripe:hover {
     background-color: var(--stripe-hover);
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .container {
-        padding: 1.8rem;
+      padding: 1.8rem;
     }
-
+    
     h1 {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
-
+    
     .price {
-        font-size: 1.8rem;
+      font-size: 1.8rem;
     }
-
+    
     .alternative-payments {
-        flex-direction: column;
+      flex-direction: column;
     }
-}
+  }
+  
